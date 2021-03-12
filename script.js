@@ -1,3 +1,2 @@
-let isChecked = '5',
-      isLol = false;
-console.log('http/${isChecked}');
+const str = 'Hello world';
+console.log(str.);
