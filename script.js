@@ -1,2 +1,2 @@
-const str = 'Hello world';
-console.log(str.);
+const calc = (a, b) => (a+b);
+console.log(calc(5, 7));

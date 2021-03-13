@@ -45,7 +45,7 @@ function rememberMyFilms() {
   }
 }
 
-
+rememberMyFilms();
 
 function showMyDB(hidden) {
   if (!hidden) {
@@ -53,19 +53,18 @@ function showMyDB(hidden) {
   }
 }
 
+
 function writeYourGenres() {
   for (let i = 1; i <= 3;) {
     let filmGenre = prompt(`Ваш любимый жанр под номером ${i}`, '');
 
     if (filmGenre == '' || filmGenre == null || filmGenre.length >= 50) {
     } else {
-      personalMovieDB.genres[i-1] = prompt(`Ваш любимый жанр под номером ${i}`, '');
+      personalMovieDB.genres[i-1] = filmGenre;
       i++;
     }
   }
 
 }
-
-rememberMyFilms();
 writeYourGenres();
 showMyDB(personalMovieDB.privat);
